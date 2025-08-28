@@ -41,8 +41,7 @@ export default function HomePage() {
                 REVIEWS
               </Link>
               <Link
-                href="https://www.instagram.com/
- niki_scott_novels"
+                href="https://www.instagram.com/niki_scott_novels"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-teal-300 transition-colors"
