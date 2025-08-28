@@ -171,7 +171,7 @@ export default function HomePage() {
               />
             </div>
             <div className="lg:w-2/3">
-              <h2 className="text-3xl font-serif text-slate-800 mb-6">
+              <h2 className="text-3xl font-serif text-slate-800 mb-6 text-center">
                 About Niki Scott
               </h2>
               <p className="leading-relaxed mb-6 text-center">
