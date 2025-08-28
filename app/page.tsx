@@ -42,8 +42,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="https://www.instagram.com/
- niki_scott_novels?
- igsh=MW53Z2RieWE0eGlkdA==&utm_source=qr"
+ niki_scott_novels"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-teal-300 transition-colors"
