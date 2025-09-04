@@ -173,16 +173,7 @@ export default function HomePage() {
       >
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/3">
-              <Image
-                src="/placeholder.svg"
-                alt="Author Portrait"
-                width={400}
-                height={300}
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-            <div className="lg:w-2/3">
+            <div>
               <h2 className="text-3xl font-serif text-slate-800 mb-6 text-center">
                 About Niki Scott
               </h2>
@@ -228,7 +219,7 @@ export default function HomePage() {
               </p>
               <div className="flex gap-4 justify-center">
                 <Link
-                  href="https://amzn.eu/d/4BZe99n"
+                  href="https://amzn.eu/d/fT06QpJ"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
