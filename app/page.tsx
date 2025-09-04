@@ -1,12 +1,39 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { ReviewsGrid, Review } from "@/components/reviews";
 import Image from "next/image";
 import Link from "next/link";
 import { Instagram } from "lucide-react";
 
 export default function HomePage() {
+  const reviews: Review[] = [
+    {
+      id: "1",
+      quote:
+        "I haven't read a romance novel since my early 20's and was held captive by Chasing Horizons. Now I'm caught in the net and have also bought Through The Tides.",
+      author: "Pauline Graham",
+    },
+    {
+      id: "2",
+      quote:
+        "I absolutely LOVED this beautifully written book! Could not put it down. Stunning prose. Brilliantly realised characters who burrow into your heart. Descriptions that wow. The writing is stunning. A travelogue and love story in one. Loved this book SO much and very highly recommend it to everyone. Cannot wait to read the next in the series and find out where Ji-Ho and Lexi go from here. Just wow! Do read this one!",
+      author: "Renita D'Silva, Author—The Dream Wedding",
+    },
+    {
+      id: "3",
+      quote:
+        "At its heart, Chasing Horizons isn't just a love story it's about freedom, transformation, and the courage to chase something beyond what’s expected. Scott delivers a tale that lingers long after the last page is turned, leaving readers nostalgic for adventures past while inspiring them to seek out new horizons.",
+      author: "Abhay Singh",
+    },
+    {
+      id: "4",
+      quote:
+        "The plan was to read a few chapters over coffee on a sunny bank holiday Monday. Realised at some point that I was halfway through this delightful page-turner. I found myself 'joining' Lexi and Ji-ho as they stepped away from it all and embarked on a year-long journey to self-discovery and serendipity. The author of this bold debut novel, immerses you further with every sumptuous description of sights, sounds fragrances and even internal dialogue, along the way. This is the art of storytelling simply at its best.",
+      author: "D.A.P",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-teal-700 to-teal-800">
       <div className="bg-slate-900 py-6">
@@ -131,26 +158,11 @@ export default function HomePage() {
         className="py-16"
         style={{ backgroundColor: "#ff8648" }}
       >
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <h2 className="text-3xl font-serif text-center text-white mb-12">
             Reviews
           </h2>
-          <div className="max-w-4xl mx-auto">
-            <Card className="bg-white shadow-lg">
-              <CardContent className="p-8">
-                <blockquote className="text-xl italic text-slate-700 mb-4">
-                  “I haven&#39;t read a romance novel since my early 20&#39;s
-                  and was held captive by Chasing Horizons. Now I&#39;m caught
-                  in the net and have also bought Through The Tides.”
-                </blockquote>
-                <div className="flex items-center justify-between">
-                  <cite className="text-slate-600 font-medium">
-                    — Pauline Graham
-                  </cite>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+          <ReviewsGrid reviews={reviews} />
         </div>
       </section>
 
