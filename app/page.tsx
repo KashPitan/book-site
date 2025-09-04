@@ -251,7 +251,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-slate-900 py-8">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-slate-400">Copyright © 2024 Niki Scott.</p>
+          <p className="text-slate-400">Copyright © 2025 Niki Scott.</p>
         </div>
       </footer>
     </div>
